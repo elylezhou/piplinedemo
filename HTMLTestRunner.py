@@ -628,7 +628,7 @@ class HTMLTestRunner(Template_mixin):
         test(result)
         self.stopTime = datetime.datetime.now()
         self.generateReport(test, result)
-        print(sys.stderr, ‘\nTimeElapsed: %s‘ % (self.stopTime-self.startTime))
+        print(sys.stderr, '\nTimeElapsed: %s' % (self.stopTime-self.startTime))
         return result
 
 
@@ -769,7 +769,7 @@ class HTMLTestRunner(Template_mixin):
         if isinstance(e,str):
             # TODO: some problem with 'string_escape': it escape \n and mess up formating
             # ue = unicode(e.encode('string_escape'))
-            ue = e.decode('latin-1')
+            ue = e
         else:
             ue = e
 

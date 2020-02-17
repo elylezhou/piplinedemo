@@ -13,7 +13,7 @@ testunit.addTest(unittest.makeSuite(youdao.Youdao))
 #runner = unittest.TextTestRunner()
 #runner.run(testunit)
 #定义个报告存放路径，支持相对路径。
-filename = 'D:\\Python\\Unittest\\search\\report\\result.html'
+filename = 'result.html'
 fp = open(filename, 'wb')
 
 runner =HTMLTestRunner.HTMLTestRunner(
